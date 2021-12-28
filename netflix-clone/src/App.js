@@ -1,11 +1,14 @@
-
+import React from "react";
 import './App.css';
+import Row from "./Row";
+import request from  "./request";
 
 function App() {
   return (
     <div className="App">
     <h1>Test</h1>
-    <Row />
+    <Row  title= "NETFLIX ORIGINALS" fetchUrl= {request.fetchNetflixOriginals}/>
+    <Row  title= "TRENDING NOW" fetchUrl={request.fetchTrending}/>
     </div>
   );
 }
