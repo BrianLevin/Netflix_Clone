@@ -6,7 +6,7 @@ import request from  "./request";
 function App() {
   return (
     <div className="App">
-    <h1>Test</h1>
+    <h1>This is an amzing test</h1>
     <Row  title= "NETFLIX ORIGINALS" fetchUrl= {request.fetchNetflixOriginals}/>
     <Row  title= "TRENDING NOW" fetchUrl={request.fetchTrending}/>
     </div>
